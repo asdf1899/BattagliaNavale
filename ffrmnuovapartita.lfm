@@ -2,10 +2,10 @@ object frmNuovaPartita: TfrmNuovaPartita
   Left = 458
   Height = 594
   Top = 70
-  Width = 690
+  Width = 709
   Caption = 'Battaglia Navale'
   ClientHeight = 574
-  ClientWidth = 690
+  ClientWidth = 709
   Menu = MenuNuovaPartita
   LCLVersion = '1.6.0.4'
   object lblTitoloNuovaPartita: TLabel
@@ -114,7 +114,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     TabOrder = 1
   end
   object lblNaviRimanenti: TLabel
-    Left = 384
+    Left = 344
     Height = 23
     Top = 488
     Width = 140
@@ -128,7 +128,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     ParentFont = False
   end
   object editNaviRimanenti: TEdit
-    Left = 552
+    Left = 512
     Height = 23
     Top = 488
     Width = 80
@@ -230,7 +230,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     TabOrder = 7
   end
   object lblY: TLabel
-    Left = 512
+    Left = 472
     Height = 23
     Top = 528
     Width = 12
@@ -244,11 +244,19 @@ object frmNuovaPartita: TfrmNuovaPartita
     ParentFont = False
   end
   object edtSottomarinoY: TEdit
-    Left = 552
+    Left = 512
     Height = 23
     Top = 528
     Width = 80
     TabOrder = 8
+  end
+  object btnAggiungi: TButton
+    Left = 608
+    Height = 34
+    Top = 517
+    Width = 91
+    Caption = 'Aggiungi'
+    TabOrder = 9
   end
   object MenuNuovaPartita: TMainMenu
     left = 8

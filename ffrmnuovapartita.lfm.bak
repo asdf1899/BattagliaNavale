@@ -229,12 +229,12 @@ object frmNuovaPartita: TfrmNuovaPartita
     Width = 80
     TabOrder = 7
   end
-  object lblX1: TLabel
+  object lblY: TLabel
     Left = 512
     Height = 23
     Top = 528
-    Width = 13
-    Caption = 'X'
+    Width = 12
+    Caption = 'Y'
     Font.CharSet = ANSI_CHARSET
     Font.Height = -19
     Font.Name = 'Verdana'

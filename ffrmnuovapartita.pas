@@ -15,6 +15,7 @@ type
   TfrmNuovaPartita = class(TForm)
     btnNuovaPartita: TButton;
     btnEsci: TButton;
+    btnAggiungi: TButton;
     edtNSottomarini: TEdit;
     edtNNavi: TEdit;
     edtSottomariniAttuali: TEdit;

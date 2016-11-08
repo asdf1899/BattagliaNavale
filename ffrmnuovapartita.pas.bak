@@ -28,7 +28,7 @@ type
     lblSottomarinoLabel: TLabel;
     lblX: TLabel;
     lblTitoloNuovaPartita: TLabel;
-    lblX1: TLabel;
+    lblY: TLabel;
     mnuInfo: TMenuItem;
     mnuAiuto: TMenuItem;
     mnuEsci: TMenuItem;
