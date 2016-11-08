@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Grids, Menus, ffrmaiuto, fbblTipi, fbblCostanti;
+  Grids, Menus, ffrmaiuto, fbblTipi;
 
 type
 
@@ -40,13 +40,15 @@ type
     procedure btnEsciClick(Sender: TObject);
     procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
-    procedure mnuFileClick(Sender: TObject);
   private
     { private declarations }
-    MatriceDati : TMatriceStringhe;
+
     procedure Inizializzazione;
   public
     { public declarations }
+   MatriceDati : TMatriceStringhe;
+   NSottomarini: Integer;
+   NNavi: Integer;
   end;
 
 var
@@ -64,14 +66,24 @@ procedure TfrmNuovaPartita.Inizializzazione;
  var
    Riga: Integer;
    Colonna: Integer;
-   NSottomarini: StrToInt(edtNSottomarini.Text);;
-   NNavi: StrToInt(edtNNavi.Text);
 
 
-procedure TfrmNuovaPartita.mnuFileClick(Sender: TObject);
-begin
-
-end;
+   Begin
+        NSottomarini := StrToInt(edtNSottomarini.Text);
+        NNavi := StrToInt(edtNNavi.Text);
+        MatriceDati.Dimensioni.Righe := 10;
+        MatriceDati.Dimensioni.Colonne := 10;
+        Oceano.Row := MatriceDati.Dimensioni.Righe;
+        Oceano.Col := MatriceDati.Dimensioni.Colonne;
+        for Riga := 1 to MatriceDati.Dimensioni.Righe   do
+             begin
+             for Colonna := 1 to MatriceDati.Dimensioni.Colonne  do
+                 begin
+                 MatriceDati.ArrayDati[Colonna, Riga] := 'asdf' ;
+                 Oceano.Cells[Oceano.Col, Oceano.Row] := MatriceDati.ArrayDati[Colonna, Riga];
+                 end;
+             end ;
+        end;
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin

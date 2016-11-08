@@ -69,6 +69,7 @@ object frmBattagliaNavale: TfrmBattagliaNavale
       Caption = 'Info'
       object mnuAiuto: TMenuItem
         Caption = 'Aiuto'
+        OnClick = mnuAiutoClick
       end
     end
   end

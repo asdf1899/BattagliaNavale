@@ -263,7 +263,6 @@ object frmNuovaPartita: TfrmNuovaPartita
     top = 8
     object mnuFile: TMenuItem
       Caption = 'File'
-      OnClick = mnuFileClick
       object mnuNuovaPartita: TMenuItem
         Caption = 'Nuova partita'
       end

@@ -1,17 +1,17 @@
 object frmNuovaPartita: TfrmNuovaPartita
-  Left = 333
-  Height = 534
-  Top = 106
-  Width = 690
+  Left = 458
+  Height = 594
+  Top = 70
+  Width = 709
   Caption = 'Battaglia Navale'
-  ClientHeight = 514
-  ClientWidth = 690
+  ClientHeight = 574
+  ClientWidth = 709
   Menu = MenuNuovaPartita
   LCLVersion = '1.6.0.4'
   object lblTitoloNuovaPartita: TLabel
     Left = 208
     Height = 35
-    Top = 32
+    Top = 16
     Width = 237
     Caption = 'Battaglia Navale'
     Font.CharSet = ANSI_CHARSET
@@ -25,7 +25,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object Oceano: TStringGrid
     Left = 24
     Height = 224
-    Top = 160
+    Top = 216
     Width = 646
     ColCount = 10
     RowCount = 10
@@ -94,7 +94,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object lblSottomariniRimanenti: TLabel
     Left = 24
     Height = 23
-    Top = 96
+    Top = 456
     Width = 210
     Caption = 'Sottomarini rimanenti'
     Font.CharSet = ANSI_CHARSET
@@ -108,15 +108,15 @@ object frmNuovaPartita: TfrmNuovaPartita
   object edtSottomariniAttuali: TEdit
     Left = 248
     Height = 23
-    Top = 96
+    Top = 456
     Width = 80
     ReadOnly = True
     TabOrder = 1
   end
   object lblNaviRimanenti: TLabel
-    Left = 384
+    Left = 344
     Height = 23
-    Top = 96
+    Top = 456
     Width = 140
     Caption = 'Navi rimanenti'
     Font.CharSet = ANSI_CHARSET
@@ -128,9 +128,9 @@ object frmNuovaPartita: TfrmNuovaPartita
     ParentFont = False
   end
   object editNaviRimanenti: TEdit
-    Left = 552
+    Left = 512
     Height = 23
-    Top = 96
+    Top = 456
     Width = 80
     ReadOnly = True
     TabOrder = 2
@@ -138,7 +138,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object lblNSottomarini: TLabel
     Left = 24
     Height = 23
-    Top = 424
+    Top = 107
     Width = 321
     Caption = 'Inserisci il numero di sottomarini'
     Font.CharSet = ANSI_CHARSET
@@ -152,7 +152,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object lblNNavi: TLabel
     Left = 24
     Height = 23
-    Top = 472
+    Top = 155
     Width = 252
     Caption = 'Inserisci il numero di navi'
     Font.CharSet = ANSI_CHARSET
@@ -166,21 +166,21 @@ object frmNuovaPartita: TfrmNuovaPartita
   object edtNSottomarini: TEdit
     Left = 384
     Height = 23
-    Top = 424
+    Top = 107
     Width = 80
     TabOrder = 3
   end
   object edtNNavi: TEdit
     Left = 384
     Height = 23
-    Top = 472
+    Top = 155
     Width = 80
     TabOrder = 4
   end
   object btnNuovaPartita: TButton
     Left = 552
     Height = 34
-    Top = 413
+    Top = 96
     Width = 91
     Caption = 'Nuova Partita'
     TabOrder = 5
@@ -188,18 +188,81 @@ object frmNuovaPartita: TfrmNuovaPartita
   object btnEsci: TButton
     Left = 552
     Height = 34
-    Top = 461
+    Top = 144
     Width = 91
     Caption = 'Esci'
     OnClick = btnEsciClick
     TabOrder = 6
+  end
+  object lblSottomarinoLabel: TLabel
+    Left = 24
+    Height = 23
+    Top = 528
+    Width = 134
+    Caption = 'Sottomarino: '
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object lblX: TLabel
+    Left = 208
+    Height = 23
+    Top = 528
+    Width = 13
+    Caption = 'X'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object edtSottomarinoX: TEdit
+    Left = 248
+    Height = 23
+    Top = 528
+    Width = 80
+    TabOrder = 7
+  end
+  object lblY: TLabel
+    Left = 472
+    Height = 23
+    Top = 528
+    Width = 12
+    Caption = 'Y'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object edtSottomarinoY: TEdit
+    Left = 512
+    Height = 23
+    Top = 528
+    Width = 80
+    TabOrder = 8
+  end
+  object btnAggiungi: TButton
+    Left = 608
+    Height = 34
+    Top = 517
+    Width = 91
+    Caption = 'Aggiungi'
+    TabOrder = 9
   end
   object MenuNuovaPartita: TMainMenu
     left = 8
     top = 8
     object mnuFile: TMenuItem
       Caption = 'File'
-      OnClick = mnuFileClick
       object mnuNuovaPartita: TMenuItem
         Caption = 'Nuova partita'
       end
@@ -212,6 +275,7 @@ object frmNuovaPartita: TfrmNuovaPartita
       Caption = 'Info'
       object mnuAiuto: TMenuItem
         Caption = 'Aiuto'
+        OnClick = mnuAiutoClick
       end
     end
   end
