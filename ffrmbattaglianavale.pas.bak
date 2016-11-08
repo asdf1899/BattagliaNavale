@@ -1,0 +1,37 @@
+unit ffrmbattaglianavale;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs;
+
+type
+
+  { TfrmBattagliaNavale }
+
+  TfrmBattagliaNavale = class(TForm)
+    procedure FormCreate(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  frmBattagliaNavale: TfrmBattagliaNavale;
+
+implementation
+
+{$R *.lfm}
+
+{ TfrmBattagliaNavale }
+
+procedure TfrmBattagliaNavale.FormCreate(Sender: TObject);
+begin
+
+end;
+
+end.
+

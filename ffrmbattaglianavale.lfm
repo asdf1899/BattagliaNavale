@@ -1,0 +1,49 @@
+object frmBattagliaNavale: TfrmBattagliaNavale
+  Left = 453
+  Height = 338
+  Top = 179
+  Width = 401
+  Caption = 'Battaglia Navale'
+  ClientHeight = 338
+  ClientWidth = 401
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object lblBattagliaNavale: TLabel
+    Left = 80
+    Height = 35
+    Top = 32
+    Width = 237
+    Caption = 'Battaglia Navale'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnNuovaPartita: TButton
+    Left = 144
+    Height = 40
+    Top = 120
+    Width = 112
+    Caption = 'Nuova partita'
+    TabOrder = 0
+  end
+  object btnAiuto: TButton
+    Left = 144
+    Height = 40
+    Top = 192
+    Width = 112
+    Caption = 'Aiuto'
+    TabOrder = 1
+  end
+  object btnAiuto1: TButton
+    Left = 144
+    Height = 40
+    Top = 264
+    Width = 112
+    Caption = 'Esci'
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,9 @@
+object frmBattagliaNavale: TfrmBattagliaNavale
+  Left = 453
+  Height = 338
+  Top = 179
+  Width = 401
+  Caption = 'Battaglia Navale'
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+end
