@@ -38,6 +38,7 @@ object frmBattagliaNavale: TfrmBattagliaNavale
     Top = 192
     Width = 112
     Caption = 'Aiuto'
+    OnClick = btnAiutoClick
     TabOrder = 1
   end
   object btnAiuto1: TButton

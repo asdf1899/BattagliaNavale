@@ -191,6 +191,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     Top = 461
     Width = 91
     Caption = 'Esci'
+    OnClick = btnEsciClick
     TabOrder = 6
   end
   object MenuNuovaPartita: TMainMenu
@@ -204,6 +205,7 @@ object frmNuovaPartita: TfrmNuovaPartita
       end
       object mnuEsci: TMenuItem
         Caption = 'Esci'
+        OnClick = mnuEsciClick
       end
     end
     object mnuInfo: TMenuItem

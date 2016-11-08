@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Grids, Menus;
+  Grids, Menus, ffrmaiuto;
 
 type
 
@@ -19,11 +19,16 @@ type
     edtNNavi: TEdit;
     edtSottomariniAttuali: TEdit;
     editNaviRimanenti: TEdit;
+    edtSottomarinoX: TEdit;
+    edtSottomarinoY: TEdit;
     lblNSottomarini: TLabel;
     lblNNavi: TLabel;
     lblSottomariniRimanenti: TLabel;
     lblNaviRimanenti: TLabel;
+    lblSottomarinoLabel: TLabel;
+    lblX: TLabel;
     lblTitoloNuovaPartita: TLabel;
+    lblY: TLabel;
     mnuInfo: TMenuItem;
     mnuAiuto: TMenuItem;
     mnuEsci: TMenuItem;
@@ -32,6 +37,7 @@ type
     MenuNuovaPartita: TMainMenu;
     Oceano: TStringGrid;
     procedure btnEsciClick(Sender: TObject);
+    procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
     procedure mnuFileClick(Sender: TObject);
   private
@@ -62,6 +68,11 @@ end;
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TfrmNuovaPartita.mnuAiutoClick(Sender: TObject);
+begin
+  frmAiuto.ShowModal;
 end;
 
 end.

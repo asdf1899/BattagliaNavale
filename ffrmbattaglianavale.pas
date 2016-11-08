@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Menus, ffrmnuovapartita;
+  Menus, ffrmnuovapartita, ffrmaiuto;
 
 type
 
@@ -24,8 +24,10 @@ type
     mnuNuovaPartita: TMenuItem;
     mnuFile: TMenuItem;
     procedure btnAiuto1Click(Sender: TObject);
+    procedure btnAiutoClick(Sender: TObject);
     procedure btnNuovaPartitaClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
     procedure mnuFileClick(Sender: TObject);
     procedure mnuNuovaPartitaClick(Sender: TObject);
@@ -49,6 +51,11 @@ begin
 
 end;
 
+procedure TfrmBattagliaNavale.mnuAiutoClick(Sender: TObject);
+begin
+ frmAiuto.ShowModal;
+end;
+
 procedure TfrmBattagliaNavale.mnuEsciClick(Sender: TObject);
 begin
      Application.Terminate;
@@ -67,6 +74,11 @@ end;
 procedure TfrmBattagliaNavale.btnAiuto1Click(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TfrmBattagliaNavale.btnAiutoClick(Sender: TObject);
+begin
+  frmAiuto.ShowModal;
 end;
 
 procedure TfrmBattagliaNavale.btnNuovaPartitaClick(Sender: TObject);

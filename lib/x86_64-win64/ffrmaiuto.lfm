@@ -1,0 +1,8 @@
+object frmAiuto: TfrmAiuto
+  Left = 500
+  Height = 240
+  Top = 239
+  Width = 320
+  Caption = 'Info'
+  LCLVersion = '1.6.0.4'
+end
