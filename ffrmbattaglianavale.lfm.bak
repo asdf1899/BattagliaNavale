@@ -1,9 +1,72 @@
 object frmBattagliaNavale: TfrmBattagliaNavale
-  Left = 453
+  Left = 426
   Height = 338
-  Top = 179
+  Top = 165
   Width = 401
   Caption = 'Battaglia Navale'
+  ClientHeight = 318
+  ClientWidth = 401
+  Menu = menu
   OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
+  object lblBattagliaNavale: TLabel
+    Left = 80
+    Height = 35
+    Top = 32
+    Width = 237
+    Caption = 'Battaglia Navale'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnNuovaPartita: TButton
+    Left = 144
+    Height = 40
+    Top = 120
+    Width = 112
+    Caption = 'Nuova partita'
+    TabOrder = 0
+  end
+  object btnAiuto: TButton
+    Left = 144
+    Height = 40
+    Top = 192
+    Width = 112
+    Caption = 'Aiuto'
+    TabOrder = 1
+  end
+  object btnAiuto1: TButton
+    Left = 144
+    Height = 40
+    Top = 264
+    Width = 112
+    Caption = 'Esci'
+    OnClick = btnAiuto1Click
+    TabOrder = 2
+  end
+  object menu: TMainMenu
+    left = 16
+    top = 8
+    object mnuFile: TMenuItem
+      Caption = 'File'
+      OnClick = mnuFileClick
+      object mnuNuovaPartita: TMenuItem
+        Caption = 'Nuova partita'
+      end
+      object mnuEsci: TMenuItem
+        Caption = 'Esci'
+        OnClick = mnuEsciClick
+      end
+    end
+    object mnuInfo: TMenuItem
+      Caption = 'Info'
+      object mnuAiuto: TMenuItem
+        Caption = 'Aiuto'
+      end
+    end
+  end
 end

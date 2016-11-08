@@ -1,11 +1,12 @@
 object frmBattagliaNavale: TfrmBattagliaNavale
-  Left = 453
+  Left = 426
   Height = 338
-  Top = 179
+  Top = 165
   Width = 401
   Caption = 'Battaglia Navale'
-  ClientHeight = 338
+  ClientHeight = 318
   ClientWidth = 401
+  Menu = menuBattagliaNavale
   OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
   object lblBattagliaNavale: TLabel
@@ -44,6 +45,28 @@ object frmBattagliaNavale: TfrmBattagliaNavale
     Top = 264
     Width = 112
     Caption = 'Esci'
+    OnClick = btnAiuto1Click
     TabOrder = 2
+  end
+  object menuBattagliaNavale: TMainMenu
+    left = 16
+    top = 8
+    object mnuFile: TMenuItem
+      Caption = 'File'
+      OnClick = mnuFileClick
+      object mnuNuovaPartita: TMenuItem
+        Caption = 'Nuova partita'
+      end
+      object mnuEsci: TMenuItem
+        Caption = 'Esci'
+        OnClick = mnuEsciClick
+      end
+    end
+    object mnuInfo: TMenuItem
+      Caption = 'Info'
+      object mnuAiuto: TMenuItem
+        Caption = 'Aiuto'
+      end
+    end
   end
 end

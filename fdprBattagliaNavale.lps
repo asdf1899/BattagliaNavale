@@ -18,16 +18,17 @@
         <Filename Value="ffrmbattaglianavale.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmBattagliaNavale"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="6"/>
-        <CursorPos X="3" Y="37"/>
+        <TopLine Value="4"/>
+        <CursorPos X="24" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
+    <JumpHistory Count="17" HistoryIndex="16">
       <Position1>
         <Filename Value="ffrmbattaglianavale.pas"/>
       </Position1>
@@ -47,6 +48,54 @@
         <Filename Value="ffrmbattaglianavale.pas"/>
         <Caret Line="36" Column="3" TopLine="6"/>
       </Position5>
+      <Position6>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="38" Column="3" TopLine="10"/>
+      </Position6>
+      <Position7>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="33" Column="41" TopLine="16"/>
+      </Position7>
+      <Position8>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="35" Column="41" TopLine="17"/>
+      </Position8>
+      <Position9>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="37" Column="41" TopLine="17"/>
+      </Position9>
+      <Position10>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="47" Column="3" TopLine="25"/>
+      </Position10>
+      <Position11>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="48" Column="3" TopLine="26"/>
+      </Position11>
+      <Position12>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="47" Column="3" TopLine="25"/>
+      </Position12>
+      <Position13>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="48" Column="3" TopLine="26"/>
+      </Position13>
+      <Position14>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="49" Column="3" TopLine="27"/>
+      </Position14>
+      <Position15>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="50" Column="3" TopLine="28"/>
+      </Position15>
+      <Position16>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="57" Column="3" TopLine="30"/>
+      </Position16>
+      <Position17>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="52" Column="28" TopLine="35"/>
+      </Position17>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

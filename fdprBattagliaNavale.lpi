@@ -42,6 +42,7 @@
         <Filename Value="ffrmbattaglianavale.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmBattagliaNavale"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit1>
     </Units>
