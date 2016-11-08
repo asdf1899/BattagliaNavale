@@ -1,0 +1,24 @@
+object frmNuovaPartita: TfrmNuovaPartita
+  Left = 413
+  Height = 398
+  Top = 143
+  Width = 478
+  Caption = 'Battaglia Navale'
+  ClientHeight = 398
+  ClientWidth = 478
+  LCLVersion = '1.6.0.4'
+  object lblTitoloNuovaPartita: TLabel
+    Left = 117
+    Height = 35
+    Top = 32
+    Width = 237
+    Caption = 'Battaglia Navale'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

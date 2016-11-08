@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="fdprBattagliaNavale.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -20,15 +20,26 @@
         <ComponentName Value="frmBattagliaNavale"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="35"/>
-        <CursorPos X="28" Y="52"/>
+        <TopLine Value="4"/>
+        <CursorPos X="24" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmNuovaPartita"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="38" Y="5"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
     </Units>
-    <JumpHistory Count="16" HistoryIndex="15">
+    <JumpHistory Count="17" HistoryIndex="16">
       <Position1>
         <Filename Value="ffrmbattaglianavale.pas"/>
       </Position1>
@@ -92,6 +103,10 @@
         <Filename Value="ffrmbattaglianavale.pas"/>
         <Caret Line="57" Column="3" TopLine="30"/>
       </Position16>
+      <Position17>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="52" Column="28" TopLine="35"/>
+      </Position17>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

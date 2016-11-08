@@ -17,7 +17,7 @@ type
     btnNuovaPartita: TButton;
     btnAiuto: TButton;
     lblBattagliaNavale: TLabel;
-    menu: TMainMenu;
+    menuBattagliaNavale: TMainMenu;
     mnuAiuto: TMenuItem;
     mnuInfo: TMenuItem;
     mnuEsci: TMenuItem;
