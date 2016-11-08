@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Grids, Menus, ffrmaiuto;
+  Grids, Menus, ffrmaiuto, fbblTipi, fbblCostanti;
 
 type
 
@@ -43,6 +43,8 @@ type
     procedure mnuFileClick(Sender: TObject);
   private
     { private declarations }
+    MatriceDati : TMatriceStringhe;
+    procedure Inizializzazione;
   public
     { public declarations }
   end;
@@ -55,6 +57,20 @@ implementation
 {$R *.lfm}
 
 { TfrmNuovaPartita }
+
+//------------------------------------------------------------------------------
+procedure TfrmNuovaPartita.Inizializzazione;
+//------------------------------------------------------------------------------
+ var
+   Riga: Integer;
+   Colonna: Integer;
+   NSottomarini: StrToInt(edtNSottomarini.Text);;
+   NNavi: StrToInt(edtNNavi.Text);
+
+   Begin
+        MatriceDati.Dimensioni.Righe := 50;
+        MatriceDati.Dimensioni.Colonne := 6;
+   End
 
 procedure TfrmNuovaPartita.mnuFileClick(Sender: TObject);
 begin

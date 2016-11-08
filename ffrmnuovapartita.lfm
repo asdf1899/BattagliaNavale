@@ -94,7 +94,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object lblSottomariniRimanenti: TLabel
     Left = 24
     Height = 23
-    Top = 488
+    Top = 456
     Width = 210
     Caption = 'Sottomarini rimanenti'
     Font.CharSet = ANSI_CHARSET
@@ -108,7 +108,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object edtSottomariniAttuali: TEdit
     Left = 248
     Height = 23
-    Top = 488
+    Top = 456
     Width = 80
     ReadOnly = True
     TabOrder = 1
@@ -116,7 +116,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object lblNaviRimanenti: TLabel
     Left = 344
     Height = 23
-    Top = 488
+    Top = 456
     Width = 140
     Caption = 'Navi rimanenti'
     Font.CharSet = ANSI_CHARSET
@@ -130,7 +130,7 @@ object frmNuovaPartita: TfrmNuovaPartita
   object editNaviRimanenti: TEdit
     Left = 512
     Height = 23
-    Top = 488
+    Top = 456
     Width = 80
     ReadOnly = True
     TabOrder = 2
