@@ -29,6 +29,7 @@ object frmBattagliaNavale: TfrmBattagliaNavale
     Top = 120
     Width = 112
     Caption = 'Nuova partita'
+    OnClick = btnNuovaPartitaClick
     TabOrder = 0
   end
   object btnAiuto: TButton
@@ -56,6 +57,7 @@ object frmBattagliaNavale: TfrmBattagliaNavale
       OnClick = mnuFileClick
       object mnuNuovaPartita: TMenuItem
         Caption = 'Nuova partita'
+        OnClick = mnuNuovaPartitaClick
       end
       object mnuEsci: TMenuItem
         Caption = 'Esci'

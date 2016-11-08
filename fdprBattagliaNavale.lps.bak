@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="ffrmbattaglianavale.pas"/>
@@ -20,9 +20,10 @@
         <ComponentName Value="frmBattagliaNavale"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="4"/>
-        <CursorPos X="24" Y="20"/>
-        <UsageCount Value="20"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="60"/>
+        <CursorPos X="19" Y="68"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -31,15 +32,15 @@
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmNuovaPartita"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="38" Y="5"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="35"/>
+        <CursorPos X="47" Y="47"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
     </Units>
-    <JumpHistory Count="17" HistoryIndex="16">
+    <JumpHistory Count="24" HistoryIndex="23">
       <Position1>
         <Filename Value="ffrmbattaglianavale.pas"/>
       </Position1>
@@ -107,6 +108,34 @@
         <Filename Value="ffrmbattaglianavale.pas"/>
         <Caret Line="52" Column="28" TopLine="35"/>
       </Position17>
+      <Position18>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="5" Column="38"/>
+      </Position18>
+      <Position19>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="48" Column="3" TopLine="40"/>
+      </Position19>
+      <Position20>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="49" Column="3" TopLine="41"/>
+      </Position20>
+      <Position21>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="50" Column="3" TopLine="42"/>
+      </Position21>
+      <Position22>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="51" Column="3" TopLine="43"/>
+      </Position22>
+      <Position23>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="20" Column="24" TopLine="43"/>
+      </Position23>
+      <Position24>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="68" Column="4" TopLine="60"/>
+      </Position24>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

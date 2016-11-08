@@ -5,14 +5,33 @@ unit ffrmnuovapartita;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Grids, Menus;
 
 type
 
   { TfrmNuovaPartita }
 
   TfrmNuovaPartita = class(TForm)
+    btnNuovaPartita: TButton;
+    btnEsci: TButton;
+    edtNSottomarini: TEdit;
+    edtNNavi: TEdit;
+    edtSottomariniAttuali: TEdit;
+    editNaviRimanenti: TEdit;
+    lblNSottomarini: TLabel;
+    lblNNavi: TLabel;
+    lblSottomariniRimanenti: TLabel;
+    lblNaviRimanenti: TLabel;
     lblTitoloNuovaPartita: TLabel;
+    mnuInfo: TMenuItem;
+    mnuAiuto: TMenuItem;
+    mnuEsci: TMenuItem;
+    mnuFile: TMenuItem;
+    mnuNuovaPartita: TMenuItem;
+    MenuNuovaPartita: TMainMenu;
+    Oceano: TStringGrid;
+    procedure mnuFileClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -25,6 +44,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TfrmNuovaPartita }
+
+procedure TfrmNuovaPartita.mnuFileClick(Sender: TObject);
+begin
+
+end;
 
 end.
 

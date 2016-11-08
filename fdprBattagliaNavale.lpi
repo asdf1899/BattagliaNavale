@@ -49,6 +49,7 @@
         <Filename Value="ffrmnuovapartita.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmNuovaPartita"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit2>
     </Units>

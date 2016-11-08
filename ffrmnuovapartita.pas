@@ -6,15 +6,34 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Grids;
+  Grids, Menus;
 
 type
 
   { TfrmNuovaPartita }
 
   TfrmNuovaPartita = class(TForm)
+    btnNuovaPartita: TButton;
+    btnEsci: TButton;
+    edtNSottomarini: TEdit;
+    edtNNavi: TEdit;
+    edtSottomariniAttuali: TEdit;
+    editNaviRimanenti: TEdit;
+    lblNSottomarini: TLabel;
+    lblNNavi: TLabel;
+    lblSottomariniRimanenti: TLabel;
+    lblNaviRimanenti: TLabel;
     lblTitoloNuovaPartita: TLabel;
-    StringGrid1: TStringGrid;
+    mnuInfo: TMenuItem;
+    mnuAiuto: TMenuItem;
+    mnuEsci: TMenuItem;
+    mnuFile: TMenuItem;
+    mnuNuovaPartita: TMenuItem;
+    MenuNuovaPartita: TMainMenu;
+    Oceano: TStringGrid;
+    procedure btnEsciClick(Sender: TObject);
+    procedure mnuEsciClick(Sender: TObject);
+    procedure mnuFileClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -27,6 +46,23 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TfrmNuovaPartita }
+
+procedure TfrmNuovaPartita.mnuFileClick(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
 
 end.
 

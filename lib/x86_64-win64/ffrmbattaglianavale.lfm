@@ -1,7 +1,7 @@
 object frmBattagliaNavale: TfrmBattagliaNavale
-  Left = 426
+  Left = 382
   Height = 338
-  Top = 165
+  Top = 150
   Width = 401
   Caption = 'Battaglia Navale'
   ClientHeight = 318
@@ -29,6 +29,7 @@ object frmBattagliaNavale: TfrmBattagliaNavale
     Top = 120
     Width = 112
     Caption = 'Nuova partita'
+    OnClick = btnNuovaPartitaClick
     TabOrder = 0
   end
   object btnAiuto: TButton
@@ -56,6 +57,7 @@ object frmBattagliaNavale: TfrmBattagliaNavale
       OnClick = mnuFileClick
       object mnuNuovaPartita: TMenuItem
         Caption = 'Nuova partita'
+        OnClick = mnuNuovaPartitaClick
       end
       object mnuEsci: TMenuItem
         Caption = 'Esci'
