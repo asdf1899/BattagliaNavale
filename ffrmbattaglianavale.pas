@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Menus, ffrmnuovapartita, ffrmaiuto;
+  Menus, ffrmnuovapartita, ffrmaiuto, fbblTipi, fbblCostanti;
 
 type
 
@@ -33,6 +33,8 @@ type
     procedure mnuNuovaPartitaClick(Sender: TObject);
   private
     { private declarations }
+    MatriceDati : TMatriceStringhe;
+
   public
     { public declarations }
   end;

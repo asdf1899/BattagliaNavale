@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Menus, ffrmnuovapartita, ffrmaiuto;
+  Menus, ffrmnuovapartita, ffrmaiuto, fbblTipi, fbblCostanti;
 
 type
 
@@ -27,11 +27,13 @@ type
     procedure btnAiutoClick(Sender: TObject);
     procedure btnNuovaPartitaClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
     procedure mnuFileClick(Sender: TObject);
     procedure mnuNuovaPartitaClick(Sender: TObject);
   private
     { private declarations }
+    MatriceDati : TMatriceStringhe;
   public
     { public declarations }
   end;
@@ -48,6 +50,11 @@ implementation
 procedure TfrmBattagliaNavale.FormCreate(Sender: TObject);
 begin
 
+end;
+
+procedure TfrmBattagliaNavale.mnuAiutoClick(Sender: TObject);
+begin
+ frmAiuto.ShowModal;
 end;
 
 procedure TfrmBattagliaNavale.mnuEsciClick(Sender: TObject);
