@@ -79,7 +79,7 @@ procedure TfrmNuovaPartita.Inizializzazione;
              begin
              for Colonna := 1 to MatriceDati.Dimensioni.Colonne  do
                  begin
-                 MatriceDati.ArrayDati[Colonna, Riga] := 'asdf' ;
+                 MatriceDati.ArrayDati[Colonna, Riga] := ' ' ;
                  Oceano.Cells[Oceano.Col, Oceano.Row] := MatriceDati.ArrayDati[Colonna, Riga];
                  end;
              end ;
@@ -87,12 +87,12 @@ procedure TfrmNuovaPartita.Inizializzazione;
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin
-  Application.Terminate;
+  frmnuovapartita.CLose;
 end;
 
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
 begin
-  Application.Terminate;
+  frmnuovapartita.Close;
 end;
 
 procedure TfrmNuovaPartita.mnuAiutoClick(Sender: TObject);

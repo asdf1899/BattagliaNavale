@@ -87,12 +87,12 @@ procedure TfrmNuovaPartita.Inizializzazione;
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin
-  Application.Terminate;
+  frmnuovapartita.Close;
 end;
 
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
 begin
-  Application.Terminate;
+  frmnuovapartita.Close;
 end;
 
 procedure TfrmNuovaPartita.mnuAiutoClick(Sender: TObject);
