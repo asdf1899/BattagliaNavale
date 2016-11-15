@@ -4,14 +4,12 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="6">
+    <Units Count="7">
       <Unit0>
         <Filename Value="fdprBattagliaNavale.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <CursorPos Y="16"/>
         <UsageCount Value="23"/>
       </Unit0>
       <Unit1>
@@ -20,11 +18,11 @@
         <ComponentName Value="frmBattagliaNavale"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="3"/>
-        <CursorPos X="37" Y="9"/>
+        <TopLine Value="57"/>
+        <CursorPos Y="19"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="ffrmnuovapartita.pas"/>
@@ -32,11 +30,13 @@
         <ComponentName Value="frmNuovaPartita"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="72"/>
-        <CursorPos Y="86"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="61"/>
+        <CursorPos Y="79"/>
         <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="ffrmaiuto.pas"/>
@@ -60,7 +60,43 @@
         <EditorIndex Value="-1"/>
         <UsageCount Value="11"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="fbbltipi.pas"/>
+        <UnitName Value="fbblTipi"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="40" Y="28"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="ffrmbattaglianavale.pas"/>
+        <Caret Line="19"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="83" Column="59" TopLine="63"/>
+      </Position2>
+      <Position3>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="101" Column="20" TopLine="30"/>
+      </Position3>
+      <Position4>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="83" Column="61" TopLine="67"/>
+      </Position4>
+    </JumpHistory>
   </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="ffrmnuovapartita.pas"/>
+        <Line Value="79"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
 </CONFIG>

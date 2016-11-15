@@ -1,7 +1,7 @@
 object frmNuovaPartita: TfrmNuovaPartita
-  Left = 458
+  Left = 229
   Height = 594
-  Top = 70
+  Top = 32
   Width = 709
   Caption = 'Battaglia Navale'
   ClientHeight = 574
@@ -183,6 +183,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     Top = 96
     Width = 91
     Caption = 'Nuova Partita'
+    OnClick = btnNuovaPartitaClick
     TabOrder = 5
   end
   object btnEsci: TButton

@@ -38,6 +38,7 @@ type
     MenuNuovaPartita: TMainMenu;
     Oceano: TStringGrid;
     procedure btnEsciClick(Sender: TObject);
+    procedure btnNuovaPartitaClick(Sender: TObject);
     procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
   private
@@ -73,14 +74,18 @@ procedure TfrmNuovaPartita.Inizializzazione;
         NNavi := StrToInt(edtNNavi.Text);
         MatriceDati.Dimensioni.Righe := 10;
         MatriceDati.Dimensioni.Colonne := 10;
-        Oceano.Row := MatriceDati.Dimensioni.Righe;
-        Oceano.Col := MatriceDati.Dimensioni.Colonne;
+        //Oceano.Row := MatriceDati.Dimensioni.Righe;
+        //Oceano.Col := MatriceDati.Dimensioni.Colonne;
+
+
         for Riga := 1 to MatriceDati.Dimensioni.Righe   do
              begin
              for Colonna := 1 to MatriceDati.Dimensioni.Colonne  do
                  begin
+                 Oceano.Row := Riga;
+                 Oceano.Col := Colonna;
                  MatriceDati.ArrayDati[Colonna, Riga] := ' ' ;
-                 Oceano.Cells[Oceano.Col, Oceano.Row] := MatriceDati.ArrayDati[Colonna, Riga];
+                 Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[Colonna, Riga];
                  end;
              end ;
         end;
@@ -93,6 +98,11 @@ end;
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
 begin
   frmnuovapartita.Close;
+end;
+
+procedure TfrmNuovaPartita.btnNuovaPartitaClick(Sender: TObject);
+begin
+  Inizializzazione;
 end;
 
 procedure TfrmNuovaPartita.mnuAiutoClick(Sender: TObject);
