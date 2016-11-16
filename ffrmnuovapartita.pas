@@ -37,6 +37,7 @@ type
     mnuNuovaPartita: TMenuItem;
     MenuNuovaPartita: TMainMenu;
     Oceano: TStringGrid;
+    procedure btnAggiungiClick(Sender: TObject);
     procedure btnEsciClick(Sender: TObject);
     procedure btnNuovaPartitaClick(Sender: TObject);
     procedure mnuAiutoClick(Sender: TObject);
@@ -67,7 +68,9 @@ procedure TfrmNuovaPartita.Inizializzazione;
  var
    Riga: Integer;
    Colonna: Integer;
-
+   i: Integer;
+   RigaNavi: Integer;
+   ColonnaNavi: Integer;
 
    Begin
         NSottomarini := StrToInt(edtNSottomarini.Text);
@@ -88,7 +91,17 @@ procedure TfrmNuovaPartita.Inizializzazione;
                  Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[Colonna, Riga];
                  end;
              end ;
+        for i := 1 to NNavi do
+            begin
+                 RigaNavi := random(9)+1;
+                 ColonnaNavi := random(9)+1;
+                 Oceano.Row := RigaNavi ;
+                 Oceano.Col := ColonnaNavi;
+                 MatriceDati.ArrayDati[ColonnaNavi, RigaNavi] := 'nave' ;
+                 Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ColonnaNavi, RigaNavi];
+            end;
         end;
+
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin
@@ -98,6 +111,11 @@ end;
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
 begin
   frmnuovapartita.Close;
+end;
+
+procedure TfrmNuovaPartita.btnAggiungiClick(Sender: TObject);
+begin
+
 end;
 
 procedure TfrmNuovaPartita.btnNuovaPartitaClick(Sender: TObject);

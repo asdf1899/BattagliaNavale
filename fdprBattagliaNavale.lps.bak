@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="7">
+    <Units Count="8">
       <Unit0>
         <Filename Value="fdprBattagliaNavale.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -63,13 +63,22 @@
       <Unit6>
         <Filename Value="fbbltipi.pas"/>
         <UnitName Value="fbblTipi"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="40" Y="28"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="10326"/>
+        <CursorPos Y="10353"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
     </Units>
-    <JumpHistory Count="4" HistoryIndex="3">
+    <JumpHistory Count="23" HistoryIndex="22">
       <Position1>
         <Filename Value="ffrmbattaglianavale.pas"/>
         <Caret Line="19"/>
@@ -86,17 +95,82 @@
         <Filename Value="ffrmnuovapartita.pas"/>
         <Caret Line="83" Column="61" TopLine="67"/>
       </Position4>
+      <Position5>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="79" TopLine="61"/>
+      </Position5>
+      <Position6>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="81" TopLine="61"/>
+      </Position6>
+      <Position7>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="83" TopLine="61"/>
+      </Position7>
+      <Position8>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="84" TopLine="61"/>
+      </Position8>
+      <Position9>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="9285" TopLine="9268"/>
+      </Position9>
+      <Position10>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="9286" TopLine="9268"/>
+      </Position10>
+      <Position11>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="9288" TopLine="9268"/>
+      </Position11>
+      <Position12>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="9289" TopLine="9268"/>
+      </Position12>
+      <Position13>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10336" TopLine="10319"/>
+      </Position13>
+      <Position14>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10343" TopLine="10319"/>
+      </Position14>
+      <Position15>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10344" TopLine="10319"/>
+      </Position15>
+      <Position16>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10345" TopLine="10319"/>
+      </Position16>
+      <Position17>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10346" TopLine="10319"/>
+      </Position17>
+      <Position18>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10347" TopLine="10319"/>
+      </Position18>
+      <Position19>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10348" TopLine="10320"/>
+      </Position19>
+      <Position20>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10349" TopLine="10321"/>
+      </Position20>
+      <Position21>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10350" TopLine="10322"/>
+      </Position21>
+      <Position22>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="10353" TopLine="10326"/>
+      </Position22>
+      <Position23>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="81" TopLine="61"/>
+      </Position23>
     </JumpHistory>
   </ProjectSession>
-  <Debugging>
-    <BreakPoints Count="1">
-      <Item1>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="ffrmnuovapartita.pas"/>
-        <Line Value="79"/>
-      </Item1>
-    </BreakPoints>
-  </Debugging>
 </CONFIG>

@@ -257,6 +257,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     Top = 517
     Width = 91
     Caption = 'Aggiungi'
+    OnClick = btnAggiungiClick
     TabOrder = 9
   end
   object MenuNuovaPartita: TMainMenu
