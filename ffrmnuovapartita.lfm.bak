@@ -1,7 +1,7 @@
 object frmNuovaPartita: TfrmNuovaPartita
-  Left = 229
+  Left = 416
   Height = 594
-  Top = 32
+  Top = 57
   Width = 709
   Caption = 'Battaglia Navale'
   ClientHeight = 574
@@ -105,7 +105,7 @@ object frmNuovaPartita: TfrmNuovaPartita
     ParentColor = False
     ParentFont = False
   end
-  object edtSottomariniAttuali: TEdit
+  object edtSottomariniRimanenti: TEdit
     Left = 248
     Height = 23
     Top = 456

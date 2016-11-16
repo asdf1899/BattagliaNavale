@@ -18,7 +18,7 @@ type
     btnAggiungi: TButton;
     edtNSottomarini: TEdit;
     edtNNavi: TEdit;
-    edtSottomariniAttuali: TEdit;
+    edtSottomariniRimanenti: TEdit;
     editNaviRimanenti: TEdit;
     edtSottomarinoX: TEdit;
     edtSottomarinoY: TEdit;
@@ -46,6 +46,7 @@ type
     { private declarations }
 
     procedure Inizializzazione;
+    procedure AggiungiSottomarini;
   public
     { public declarations }
    MatriceDati : TMatriceStringhe;
@@ -93,8 +94,8 @@ procedure TfrmNuovaPartita.Inizializzazione;
              end ;
         for i := 1 to NNavi do
             begin
-                 RigaNavi := IntToStr(random(9)+1);
-                 ColonnaNavi := IntToStr(random(9)+1);
+                 RigaNavi := random(9)+1;
+                 ColonnaNavi := random(9)+1;
                  Oceano.Row := RigaNavi ;
                  Oceano.Col := ColonnaNavi;
                  MatriceDati.ArrayDati[ColonnaNavi, RigaNavi] := 'nave' ;
@@ -102,6 +103,12 @@ procedure TfrmNuovaPartita.Inizializzazione;
             end;
         end;
 
+procedure TfrmNuovaPartita.AggiungiSottomarini;
+
+begin
+     edtNaviRimanenti.Text := IntToStr(NNavi);
+     edtSottomariniRimanenti.Text := IntToStr(NSottomarini)
+end;
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin
@@ -115,7 +122,7 @@ end;
 
 procedure TfrmNuovaPartita.btnAggiungiClick(Sender: TObject);
 begin
-
+    AggiungiSottomarini;
 end;
 
 procedure TfrmNuovaPartita.btnNuovaPartitaClick(Sender: TObject);
