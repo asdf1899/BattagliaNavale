@@ -1,7 +1,7 @@
 object frmNuovaPartita: TfrmNuovaPartita
-  Left = 416
+  Left = 308
   Height = 594
-  Top = 57
+  Top = 31
   Width = 709
   Caption = 'Battaglia Navale'
   ClientHeight = 574

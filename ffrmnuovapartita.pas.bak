@@ -19,7 +19,7 @@ type
     edtNSottomarini: TEdit;
     edtNNavi: TEdit;
     edtSottomariniRimanenti: TEdit;
-    editNaviRimanenti: TEdit;
+    edtNaviRimanenti: TEdit;
     edtSottomarinoX: TEdit;
     edtSottomarinoY: TEdit;
     lblNSottomarini: TLabel;
@@ -52,6 +52,9 @@ type
    MatriceDati : TMatriceStringhe;
    NSottomarini: Integer;
    NNavi: Integer;
+   Contatore: Integer;
+   NaviAttuali :Integer;
+   SottomariniAttuali:Integer;
   end;
 
 var
@@ -74,13 +77,15 @@ procedure TfrmNuovaPartita.Inizializzazione;
    ColonnaNavi: Integer;
 
    Begin
+        Contatore := 0;
         NSottomarini := StrToInt(edtNSottomarini.Text);
         NNavi := StrToInt(edtNNavi.Text);
         MatriceDati.Dimensioni.Righe := 10;
         MatriceDati.Dimensioni.Colonne := 10;
         //Oceano.Row := MatriceDati.Dimensioni.Righe;
         //Oceano.Col := MatriceDati.Dimensioni.Colonne;
-
+        edtNaviRimanenti.Text := IntToStr(NNavi);
+        edtSottomariniRimanenti.Text := IntToStr(NSottomarini);
 
         for Riga := 1 to MatriceDati.Dimensioni.Righe   do
              begin
@@ -104,10 +109,41 @@ procedure TfrmNuovaPartita.Inizializzazione;
         end;
 
 procedure TfrmNuovaPartita.AggiungiSottomarini;
+var
+  xSottomarino:Integer;
+  ySottomarino:Integer;
 
 begin
-     edtNaviRimanenti.Text := IntToStr(NNavi);
-     edtSottomariniRimanenti.Text := IntToStr(NSottomarini)
+  Contatore := Contatore + 1;
+  if (Contatore = 1) then
+     begin
+          NaviAttuali := NNavi;
+          SottomariniAttuali := NSottomarini;
+     end;
+  begin
+   SottomariniAttuali := SottomariniAttuali - 1;
+   edtNaviRimanenti.Text := IntToStr(NaviAttuali);
+   edtSottomariniRimanenti.Text := IntToStr(SottomariniAttuali);
+   xSottomarino := StrToInt(edtSottomarinoX.Text);
+   ySottomarino := StrToInt(edtSottomarinoY.Text);
+   if (MatriceDati.ArrayDati[xSottomarino, ySottomarino] = 'navi') then
+      begin
+           NaviAttuali := NaviAttuali - 1;
+           edtNaviRimanenti.Text := IntToStr(NaviAttuali);
+           Oceano.Row := xSottomarino ;
+           Oceano.Col := ySottomarino;
+           MatriceDati.ArrayDati[xSottomarino, ySottomarino] := 'sottomarino';
+           Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[xSottomarino, ySottomarino];
+      end
+   else
+       begin
+           Oceano.Row := xSottomarino ;
+           Oceano.Col := ySottomarino;
+           MatriceDati.ArrayDati[xSottomarino, ySottomarino] := 'sottomarino';
+           Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[xSottomarino, ySottomarino];
+        end;
+   edtSottomarinoX.Text := ' ';
+  end;
 end;
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);

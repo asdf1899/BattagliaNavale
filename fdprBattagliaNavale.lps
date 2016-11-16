@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="16"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
       </Unit0>
       <Unit1>
         <Filename Value="ffrmbattaglianavale.pas"/>
@@ -18,9 +18,9 @@
         <ComponentName Value="frmBattagliaNavale"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="57"/>
+        <TopLine Value="44"/>
         <CursorPos Y="19"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -32,9 +32,9 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="92"/>
-        <CursorPos X="54" Y="115"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="104"/>
+        <CursorPos X="46" Y="119"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -46,7 +46,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="4"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\..\..\fbblcostanti.pas"/>
@@ -81,123 +81,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="81" TopLine="61"/>
+        <Caret Line="84" TopLine="61"/>
       </Position1>
       <Position2>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="83" TopLine="61"/>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="9285" TopLine="9268"/>
       </Position2>
       <Position3>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="84" TopLine="61"/>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="9286" TopLine="9268"/>
       </Position3>
       <Position4>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="9285" TopLine="9268"/>
+        <Caret Line="9288" TopLine="9268"/>
       </Position4>
       <Position5>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="9286" TopLine="9268"/>
+        <Caret Line="9289" TopLine="9268"/>
       </Position5>
       <Position6>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="9288" TopLine="9268"/>
+        <Caret Line="10336" TopLine="10319"/>
       </Position6>
       <Position7>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="9289" TopLine="9268"/>
+        <Caret Line="10343" TopLine="10319"/>
       </Position7>
       <Position8>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10336" TopLine="10319"/>
+        <Caret Line="10344" TopLine="10319"/>
       </Position8>
       <Position9>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10343" TopLine="10319"/>
+        <Caret Line="10345" TopLine="10319"/>
       </Position9>
       <Position10>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10344" TopLine="10319"/>
+        <Caret Line="10346" TopLine="10319"/>
       </Position10>
       <Position11>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10345" TopLine="10319"/>
+        <Caret Line="10347" TopLine="10319"/>
       </Position11>
       <Position12>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10346" TopLine="10319"/>
+        <Caret Line="10348" TopLine="10320"/>
       </Position12>
       <Position13>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10347" TopLine="10319"/>
+        <Caret Line="10349" TopLine="10321"/>
       </Position13>
       <Position14>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10348" TopLine="10320"/>
+        <Caret Line="10350" TopLine="10322"/>
       </Position14>
       <Position15>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10349" TopLine="10321"/>
+        <Caret Line="10353" TopLine="10326"/>
       </Position15>
       <Position16>
-        <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10350" TopLine="10322"/>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="81" TopLine="61"/>
       </Position16>
       <Position17>
-        <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="10353" TopLine="10326"/>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="28" Column="9" TopLine="14"/>
       </Position17>
       <Position18>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="81" TopLine="61"/>
+        <Caret Line="118" Column="21" TopLine="88"/>
       </Position18>
       <Position19>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="28" Column="9" TopLine="14"/>
+        <Caret Line="113" Column="9" TopLine="87"/>
       </Position19>
       <Position20>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="118" Column="21" TopLine="88"/>
+        <Caret Line="100" Column="52" TopLine="76"/>
       </Position20>
       <Position21>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="113" Column="9" TopLine="87"/>
+        <Caret Line="94" Column="25" TopLine="83"/>
       </Position21>
       <Position22>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="100" Column="52" TopLine="76"/>
+        <Caret Line="101" Column="23" TopLine="91"/>
       </Position22>
       <Position23>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="94" Column="25" TopLine="83"/>
+        <Caret Line="49" TopLine="41"/>
       </Position23>
       <Position24>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="101" Column="23" TopLine="91"/>
+        <Caret Line="73" Column="15" TopLine="61"/>
       </Position24>
       <Position25>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="49" TopLine="41"/>
+        <Caret Line="97" Column="44" TopLine="80"/>
       </Position25>
       <Position26>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="73" Column="15" TopLine="61"/>
+        <Caret Line="127" Column="25" TopLine="99"/>
       </Position26>
       <Position27>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="97" Column="44" TopLine="80"/>
+        <Caret Line="107" TopLine="91"/>
       </Position27>
       <Position28>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="127" Column="25" TopLine="99"/>
+        <Caret Line="109" Column="22" TopLine="92"/>
       </Position28>
       <Position29>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="107" TopLine="91"/>
+        <Caret Line="110" Column="23" TopLine="93"/>
       </Position29>
       <Position30>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="109" Column="22" TopLine="92"/>
+        <Caret Line="115" Column="16" TopLine="97"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
