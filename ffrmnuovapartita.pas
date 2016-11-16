@@ -73,8 +73,8 @@ procedure TfrmNuovaPartita.Inizializzazione;
    Riga: Integer;
    Colonna: Integer;
    i: Integer;
-   RigaNavi: Integer;
-   ColonnaNavi: Integer;
+   RigaNavi: longint;
+   ColonnaNavi: longint;
 
    Begin
         Contatore := 0;
@@ -99,8 +99,8 @@ procedure TfrmNuovaPartita.Inizializzazione;
              end ;
         for i := 1 to NNavi do
             begin
-                 RigaNavi := random(9)+1;
-                 ColonnaNavi := random(9)+1;
+                 RigaNavi := 4 ;//random(9)+1;
+                 ColonnaNavi := 3; //random(9)+1;
                  Oceano.Row := RigaNavi ;
                  Oceano.Col := ColonnaNavi;
                  MatriceDati.ArrayDati[ColonnaNavi, RigaNavi] := 'nave' ;
@@ -112,6 +112,7 @@ procedure TfrmNuovaPartita.AggiungiSottomarini;
 var
   xSottomarino:Integer;
   ySottomarino:Integer;
+  a:String;
 
 begin
   Contatore := Contatore + 1;
@@ -126,21 +127,22 @@ begin
    edtSottomariniRimanenti.Text := IntToStr(SottomariniAttuali);
    xSottomarino := StrToInt(edtSottomarinoX.Text);
    ySottomarino := StrToInt(edtSottomarinoY.Text);
-   if (MatriceDati.ArrayDati[xSottomarino, ySottomarino] = 'navi') then
+   a := MatriceDati.ArrayDati[ySottomarino, xSottomarino];
+  if (MatriceDati.ArrayDati[ySottomarino, xSottomarino] = 'nave') then
       begin
            NaviAttuali := NaviAttuali - 1;
            edtNaviRimanenti.Text := IntToStr(NaviAttuali);
            Oceano.Row := xSottomarino ;
            Oceano.Col := ySottomarino;
-           MatriceDati.ArrayDati[xSottomarino, ySottomarino] := 'sottomarino';
-           Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[xSottomarino, ySottomarino];
+           MatriceDati.ArrayDati[ySottomarino, xSottomarino] := 'sottomarino';
+           Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ySottomarino, xSottomarino];
       end
    else
        begin
            Oceano.Row := xSottomarino ;
            Oceano.Col := ySottomarino;
-           MatriceDati.ArrayDati[xSottomarino, ySottomarino] := 'sottomarino';
-           Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[xSottomarino, ySottomarino];
+           MatriceDati.ArrayDati[ySottomarino, xSottomarino] := 'sottomarino';
+           Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ySottomarino, xSottomarino];
         end;
    edtSottomarinoX.Text := ' ';
    edtSottomarinoY.Text := ' ';
