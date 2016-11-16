@@ -99,8 +99,8 @@ procedure TfrmNuovaPartita.Inizializzazione;
              end ;
         for i := 1 to NNavi do
             begin
-                 RigaNavi := 4 ;//random(9)+1;
-                 ColonnaNavi := 3; //random(9)+1;
+                 RigaNavi := random(9)+1;
+                 ColonnaNavi := random(9)+1;
                  Oceano.Row := RigaNavi ;
                  Oceano.Col := ColonnaNavi;
                  MatriceDati.ArrayDati[ColonnaNavi, RigaNavi] := 'nave' ;
@@ -112,7 +112,6 @@ procedure TfrmNuovaPartita.AggiungiSottomarini;
 var
   xSottomarino:Integer;
   ySottomarino:Integer;
-  a:String;
 
 begin
   Contatore := Contatore + 1;
@@ -127,7 +126,6 @@ begin
    edtSottomariniRimanenti.Text := IntToStr(SottomariniAttuali);
    xSottomarino := StrToInt(edtSottomarinoX.Text);
    ySottomarino := StrToInt(edtSottomarinoY.Text);
-   a := MatriceDati.ArrayDati[ySottomarino, xSottomarino];
   if (MatriceDati.ArrayDati[ySottomarino, xSottomarino] = 'nave') then
       begin
            NaviAttuali := NaviAttuali - 1;
