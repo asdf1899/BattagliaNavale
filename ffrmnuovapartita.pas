@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Grids, Menus, ffrmaiuto, fbblTipi, ffrmvittoria;
+  Grids, Menus, ffrmaiuto, fbblTipi, ffrmvittoria, ffrmsconfitta;
 
 type
 
@@ -40,8 +40,10 @@ type
     procedure btnAggiungiClick(Sender: TObject);
     procedure btnEsciClick(Sender: TObject);
     procedure btnNuovaPartitaClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
+    procedure mnuNuovaPartitaClick(Sender: TObject);
   private
     { private declarations }
 
@@ -178,21 +180,28 @@ begin
           frmvittoria.ShowModal;
           frmnuovapartita.Close;
      end;
-   if (SottomariniAttuali = 0) then
+   if (SottomariniAttuali = 0) and (NaviAttuali > 0) then
      begin
           reset;
-          frmvittoria.ShowModal;;
+          frmsconfitta.ShowModal;;
      end;
   end;
 end;
 
 procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin
-  frmnuovapartita.Close;
+     reset;
+     frmnuovapartita.Close;
+end;
+
+procedure TfrmNuovaPartita.mnuNuovaPartitaClick(Sender: TObject);
+begin
+     Inizializzazione;
 end;
 
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);
 begin
+  reset;
   frmnuovapartita.Close;
 end;
 
@@ -204,6 +213,11 @@ end;
 procedure TfrmNuovaPartita.btnNuovaPartitaClick(Sender: TObject);
 begin
   Inizializzazione;
+end;
+
+procedure TfrmNuovaPartita.FormCreate(Sender: TObject);
+begin
+
 end;
 
 procedure TfrmNuovaPartita.mnuAiutoClick(Sender: TObject);

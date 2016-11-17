@@ -2,11 +2,12 @@ object frmNuovaPartita: TfrmNuovaPartita
   Left = 311
   Height = 594
   Top = 31
-  Width = 783
+  Width = 790
   Caption = 'Battaglia Navale'
   ClientHeight = 574
-  ClientWidth = 783
+  ClientWidth = 790
   Menu = MenuNuovaPartita
+  OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
   object lblTitoloNuovaPartita: TLabel
     Left = 208

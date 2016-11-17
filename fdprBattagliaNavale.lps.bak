@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="9">
+    <Units Count="10">
       <Unit0>
         <Filename Value="fdprBattagliaNavale.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -31,8 +31,8 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="61"/>
-        <CursorPos X="11" Y="87"/>
+        <TopLine Value="165"/>
+        <CursorPos X="51" Y="181"/>
         <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -43,7 +43,7 @@
         <ComponentName Value="frmAiuto"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <CursorPos X="23" Y="4"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
@@ -64,7 +64,7 @@
       <Unit6>
         <Filename Value="fbbltipi.pas"/>
         <UnitName Value="fbblTipi"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="40" Y="28"/>
         <UsageCount Value="13"/>
         <Loaded Value="True"/>
@@ -72,7 +72,7 @@
       <Unit7>
         <Filename Value="C:\lazarus\lcl\grids.pas"/>
         <UnitName Value="Grids"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="2958"/>
         <CursorPos Y="2981"/>
         <UsageCount Value="13"/>
@@ -90,128 +90,136 @@
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit8>
+      <Unit9>
+        <Filename Value="ffrmsconfitta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSconfitta"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="5"/>
+        <CursorPos X="22" Y="35"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="97" Column="44" TopLine="80"/>
+        <Caret Line="119" Column="46" TopLine="104"/>
       </Position1>
       <Position2>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="127" Column="25" TopLine="99"/>
+        <Caret Line="114" Column="16" TopLine="99"/>
       </Position2>
       <Position3>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="107" TopLine="91"/>
+        <Caret Line="113" Column="13" TopLine="96"/>
       </Position3>
       <Position4>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="109" Column="22" TopLine="92"/>
+        <Caret Line="142" Column="18" TopLine="111"/>
       </Position4>
       <Position5>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="110" Column="23" TopLine="93"/>
+        <Caret Line="135" Column="14" TopLine="119"/>
       </Position5>
       <Position6>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="115" Column="16" TopLine="97"/>
+        <Caret Line="142" Column="50" TopLine="114"/>
       </Position6>
       <Position7>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="119" Column="46" TopLine="104"/>
+        <Caret Line="113" Column="30" TopLine="103"/>
       </Position7>
       <Position8>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="114" Column="16" TopLine="99"/>
+        <Caret Line="117" Column="4" TopLine="98"/>
       </Position8>
       <Position9>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="113" Column="13" TopLine="96"/>
+        <Caret Line="129" TopLine="114"/>
       </Position9>
       <Position10>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="142" Column="18" TopLine="111"/>
+        <Caret Line="140" TopLine="114"/>
       </Position10>
       <Position11>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="135" Column="14" TopLine="119"/>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="2976" TopLine="2958"/>
       </Position11>
       <Position12>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="142" Column="50" TopLine="114"/>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <Caret Line="2981" TopLine="2958"/>
       </Position12>
       <Position13>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="113" Column="30" TopLine="103"/>
+        <Caret Line="77" Column="24" TopLine="65"/>
       </Position13>
       <Position14>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="117" Column="4" TopLine="98"/>
+        <Caret Line="176" TopLine="142"/>
       </Position14>
       <Position15>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="129" TopLine="114"/>
+        <Caret Line="129" Column="104" TopLine="113"/>
       </Position15>
       <Position16>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="140" TopLine="114"/>
+        <Caret Line="128" Column="12" TopLine="111"/>
       </Position16>
       <Position17>
-        <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="2976" TopLine="2958"/>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="130" TopLine="114"/>
       </Position17>
       <Position18>
-        <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <Caret Line="2981" TopLine="2958"/>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="112" Column="81" TopLine="118"/>
       </Position18>
       <Position19>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="77" Column="24" TopLine="65"/>
+        <Filename Value="ffrmvittoria.pas"/>
+        <Caret Line="35" Column="6" TopLine="5"/>
       </Position19>
       <Position20>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="176" TopLine="142"/>
+        <Caret Line="130" Column="33" TopLine="104"/>
       </Position20>
       <Position21>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="129" Column="104" TopLine="113"/>
+        <Caret Line="128" Column="26" TopLine="107"/>
       </Position21>
       <Position22>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="128" Column="12" TopLine="111"/>
+        <Caret Line="9" Column="49"/>
       </Position22>
       <Position23>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="130" TopLine="114"/>
+        <Filename Value="ffrmvittoria.pas"/>
+        <Caret Line="36" Column="21" TopLine="2"/>
       </Position23>
       <Position24>
-        <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="112" Column="81" TopLine="118"/>
+        <Filename Value="ffrmvittoria.pas"/>
+        <Caret Line="8" Column="90"/>
       </Position24>
       <Position25>
-        <Filename Value="ffrmvittoria.pas"/>
-        <Caret Line="35" Column="6" TopLine="5"/>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="87" Column="11" TopLine="61"/>
       </Position25>
       <Position26>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="130" Column="33" TopLine="104"/>
+        <Caret Line="93" Column="4" TopLine="71"/>
       </Position26>
       <Position27>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="128" Column="26" TopLine="107"/>
+        <Caret Line="92" Column="23" TopLine="70"/>
       </Position27>
       <Position28>
         <Filename Value="ffrmnuovapartita.pas"/>
-        <Caret Line="9" Column="49"/>
+        <Caret Line="183" Column="17" TopLine="165"/>
       </Position28>
       <Position29>
-        <Filename Value="ffrmvittoria.pas"/>
-        <Caret Line="36" Column="21" TopLine="2"/>
+        <Filename Value="ffrmnuovapartita.pas"/>
+        <Caret Line="92" Column="15" TopLine="76"/>
       </Position29>
-      <Position30>
-        <Filename Value="ffrmvittoria.pas"/>
-        <Caret Line="8" Column="90"/>
-      </Position30>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
