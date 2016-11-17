@@ -13,6 +13,7 @@ type
   { TfrmNuovaPartita }
 
   TfrmNuovaPartita = class(TForm)
+    btnMostraNavi: TButton;
     btnNuovaPartita: TButton;
     btnEsci: TButton;
     btnAggiungi: TButton;
@@ -43,12 +44,14 @@ type
     procedure FormCreate(Sender: TObject);
     procedure mnuAiutoClick(Sender: TObject);
     procedure mnuEsciClick(Sender: TObject);
+    procedure mnuNuovaPartitaClick(Sender: TObject);
   private
     { private declarations }
 
     procedure Inizializzazione;
     procedure AggiungiSottomarini;
     procedure Reset;
+    procedure MostraNavi;
   public
     { public declarations }
    MatriceDati : TMatriceStringhe;
@@ -92,6 +95,24 @@ procedure TfrmNuovaPartita.Reset;
        edtSottomarinoX.Text := ' ';
        edtSottomarinoY.Text := ' ';
    end;
+//------------------------------------------------------------------------------
+procedure TfrmNuovaPartita.MostraNavi;
+//------------------------------------------------------------------------------
+  var
+    Riga: Integer;
+    Colonna: Integer;
+
+  begin
+       for Riga := 1 to MatriceDati.Dimensioni.Righe   do
+             begin
+             for Colonna := 1 to MatriceDati.Dimensioni.Colonne  do
+                 begin
+                 Oceano.Row := Riga;
+                 Oceano.Col := Colonna;
+                 Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[Colonna, Riga];
+                 end;
+             end ;
+  end;
 
 //------------------------------------------------------------------------------
 procedure TfrmNuovaPartita.Inizializzazione;
@@ -128,10 +149,10 @@ procedure TfrmNuovaPartita.Inizializzazione;
             begin
                  RigaNavi := random(9)+1;
                  ColonnaNavi := random(9)+1;
-                 Oceano.Row := RigaNavi ;
-                 Oceano.Col := ColonnaNavi;
+                 //Oceano.Row := RigaNavi ;
+                 //Oceano.Col := ColonnaNavi;
                  MatriceDati.ArrayDati[ColonnaNavi, RigaNavi] := 'nave' ;
-                 Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ColonnaNavi, RigaNavi];
+                 //Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ColonnaNavi, RigaNavi];
             end;
         end;
 //------------------------------------------------------------------------------
@@ -191,6 +212,11 @@ procedure TfrmNuovaPartita.mnuEsciClick(Sender: TObject);
 begin
      reset;
      frmnuovapartita.Close;
+end;
+
+procedure TfrmNuovaPartita.mnuNuovaPartitaClick(Sender: TObject);
+begin
+     Inizializzazione;
 end;
 
 procedure TfrmNuovaPartita.btnEsciClick(Sender: TObject);

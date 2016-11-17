@@ -33,7 +33,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="5">
+    <Units Count="6">
       <Unit0>
         <Filename Value="fdprBattagliaNavale.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -65,6 +65,12 @@
         <ComponentName Value="frmVittoria"/>
         <ResourceBaseClass Value="Form"/>
       </Unit4>
+      <Unit5>
+        <Filename Value="ffrmsconfitta.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmSconfitta"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit5>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

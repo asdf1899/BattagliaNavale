@@ -1,10 +1,10 @@
 object frmNuovaPartita: TfrmNuovaPartita
-  Left = 311
-  Height = 594
-  Top = 31
+  Left = 277
+  Height = 598
+  Top = 39
   Width = 790
   Caption = 'Battaglia Navale'
-  ClientHeight = 574
+  ClientHeight = 578
   ClientWidth = 790
   Menu = MenuNuovaPartita
   OnCreate = FormCreate
@@ -272,6 +272,15 @@ object frmNuovaPartita: TfrmNuovaPartita
     Caption = 'Aggiungi'
     OnClick = btnAggiungiClick
     TabOrder = 9
+  end
+  object btnMostraNavi: TButton
+    Left = 608
+    Height = 34
+    Top = 456
+    Width = 91
+    Caption = 'Mostra navi'
+    OnClick = btnMostraNaviClick
+    TabOrder = 10
   end
   object MenuNuovaPartita: TMainMenu
     left = 8
