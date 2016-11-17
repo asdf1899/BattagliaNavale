@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Grids, Menus, ffrmaiuto, fbblTipi;
+  Grids, Menus, ffrmaiuto, fbblTipi, ffrmvittoria;
 
 type
 
@@ -47,6 +47,7 @@ type
 
     procedure Inizializzazione;
     procedure AggiungiSottomarini;
+    procedure Reset;
   public
     { public declarations }
    MatriceDati : TMatriceStringhe;
@@ -65,6 +66,31 @@ implementation
 {$R *.lfm}
 
 { TfrmNuovaPartita }
+
+//------------------------------------------------------------------------------
+procedure TfrmNuovaPartita.Reset;
+//------------------------------------------------------------------------------
+  var
+   Riga: Integer;
+   Colonna: Integer;
+   begin
+       for Riga := 1 to MatriceDati.Dimensioni.Righe   do
+             begin
+             for Colonna := 1 to MatriceDati.Dimensioni.Colonne  do
+                 begin
+                 Oceano.Row := Riga;
+                 Oceano.Col := Colonna;
+                 MatriceDati.ArrayDati[Colonna, Riga] := ' ' ;
+                 Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[Colonna, Riga];
+                 end;
+             end ;
+       edtNSottomarini.Text := ' ';
+       edtNNavi.Text := ' ';
+       edtSottomariniRimanenti.Text := ' ';
+       edtNaviRimanenti.Text := ' ';
+       edtSottomarinoX.Text := ' ';
+       edtSottomarinoY.Text := ' ';
+   end;
 
 //------------------------------------------------------------------------------
 procedure TfrmNuovaPartita.Inizializzazione;
@@ -107,8 +133,9 @@ procedure TfrmNuovaPartita.Inizializzazione;
                  Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ColonnaNavi, RigaNavi];
             end;
         end;
-
+//------------------------------------------------------------------------------
 procedure TfrmNuovaPartita.AggiungiSottomarini;
+//------------------------------------------------------------------------------
 var
   xSottomarino:Integer;
   ySottomarino:Integer;
@@ -120,7 +147,8 @@ begin
           NaviAttuali := NNavi;
           SottomariniAttuali := NSottomarini;
      end;
-  begin
+
+begin
    SottomariniAttuali := SottomariniAttuali - 1;
    edtNaviRimanenti.Text := IntToStr(NaviAttuali);
    edtSottomariniRimanenti.Text := IntToStr(SottomariniAttuali);
@@ -132,7 +160,7 @@ begin
            edtNaviRimanenti.Text := IntToStr(NaviAttuali);
            Oceano.Row := xSottomarino ;
            Oceano.Col := ySottomarino;
-           MatriceDati.ArrayDati[ySottomarino, xSottomarino] := 'sottomarino';
+           MatriceDati.ArrayDati[ySottomarino, xSottomarino] := 'nave colpita';
            Oceano.Cells[Oceano.Row, Oceano.Col] := MatriceDati.ArrayDati[ySottomarino, xSottomarino];
       end
    else
@@ -144,6 +172,17 @@ begin
         end;
    edtSottomarinoX.Text := ' ';
    edtSottomarinoY.Text := ' ';
+   if (NaviAttuali = 0) then
+     begin
+          reset;
+          frmvittoria.ShowModal;
+          frmnuovapartita.Close;
+     end;
+   if (SottomariniAttuali = 0) then
+     begin
+          reset;
+          frmvittoria.ShowModal;;
+     end;
   end;
 end;
 

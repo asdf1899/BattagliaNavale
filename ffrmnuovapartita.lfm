@@ -1,11 +1,11 @@
 object frmNuovaPartita: TfrmNuovaPartita
-  Left = 308
+  Left = 311
   Height = 594
   Top = 31
-  Width = 709
+  Width = 783
   Caption = 'Battaglia Navale'
   ClientHeight = 574
-  ClientWidth = 709
+  ClientWidth = 783
   Menu = MenuNuovaPartita
   LCLVersion = '1.6.0.4'
   object lblTitoloNuovaPartita: TLabel
@@ -26,10 +26,22 @@ object frmNuovaPartita: TfrmNuovaPartita
     Left = 24
     Height = 224
     Top = 216
-    Width = 646
+    Width = 752
     ColCount = 10
     RowCount = 10
     TabOrder = 0
+    ColWidths = (
+      64
+      76
+      76
+      76
+      78
+      78
+      80
+      77
+      76
+      64
+    )
     Cells = (
       19
       0

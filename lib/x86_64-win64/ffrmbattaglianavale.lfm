@@ -1,7 +1,7 @@
 object frmBattagliaNavale: TfrmBattagliaNavale
-  Left = 337
+  Left = 381
   Height = 338
-  Top = 147
+  Top = 162
   Width = 401
   Caption = 'Battaglia Navale'
   ClientHeight = 318

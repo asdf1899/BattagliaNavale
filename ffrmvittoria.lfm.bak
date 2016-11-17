@@ -1,0 +1,34 @@
+object frmVittoria: TfrmVittoria
+  Left = 418
+  Height = 240
+  Top = 201
+  Width = 320
+  Caption = 'VITTORIA'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.6.0.4'
+  object lblVittoria: TLabel
+    Left = 32
+    Height = 45
+    Top = 64
+    Width = 260
+    Caption = 'HAI VINTO !!!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clGreen
+    Font.Height = -37
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object bntOK: TButton
+    Left = 104
+    Height = 49
+    Top = 144
+    Width = 112
+    Caption = 'OK'
+    OnClick = bntOKClick
+    TabOrder = 0
+  end
+end

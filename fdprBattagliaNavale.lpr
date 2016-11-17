@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, ffrmbattaglianavale, ffrmnuovapartita, ffrmaiuto
+  Forms, ffrmbattaglianavale, ffrmnuovapartita, ffrmaiuto, ffrmvittoria
   { you can add units after this };
 
 {$R *.res}
@@ -18,6 +18,7 @@ begin
   Application.CreateForm(TfrmBattagliaNavale, frmBattagliaNavale);
   Application.CreateForm(TfrmNuovaPartita, frmNuovaPartita);
   Application.CreateForm(TfrmAiuto, frmAiuto);
+  Application.CreateForm(TfrmVittoria, frmVittoria);
   Application.Run;
 end.
 
