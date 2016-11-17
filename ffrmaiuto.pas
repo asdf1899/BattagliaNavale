@@ -12,6 +12,9 @@ type
   { TfrmAiuto }
 
   TfrmAiuto = class(TForm)
+    btnOk: TButton;
+    lblAbout: TLabel;
+    procedure btnOkClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -24,6 +27,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TfrmAiuto }
+
+procedure TfrmAiuto.btnOkClick(Sender: TObject);
+begin
+  frmAiuto.Close;
+end;
 
 end.
 
